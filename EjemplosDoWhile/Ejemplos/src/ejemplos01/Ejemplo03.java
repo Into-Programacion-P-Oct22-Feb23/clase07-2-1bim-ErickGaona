@@ -19,6 +19,8 @@ public class Ejemplo03 {
         entrada.useLocale(Locale.US);
         String cadenaFinal = "";
         double nota;
+        double suma_final;
+        double nota_final;
         boolean bandera = true;
         int salida;
         do {
@@ -28,12 +30,18 @@ public class Ejemplo03 {
 
             System.out.println("Ingrese (-111) si desea salir del ciclo ");
             salida = entrada.nextInt();
+            
+            suma_final = nota +  nota;
+            
+                    
+            
 
             if (salida == -111) {
                 bandera = false;
             }
 
         } while (bandera); // (bandera==true)
+        System.out.println("suma de las notas es:"+suma_final);
         System.out.printf("Listado de Notas\n%s\n", cadenaFinal);
     }
 }
